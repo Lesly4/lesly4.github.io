@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Lesly Tsoptio Fougang:Publication, Software, Theses.">
+    <meta name="author" content="Lesly Tsoptio Fougang">
+    <title>Projects | Lesly Tsoptio Fougang</title>
+    <link href="../assets/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><strong>Lesly Tsoptio Fougang</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research-interests.html">Research Interests</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-2">Projects</h1>
+            <p class="lead mb-0">Publications, Software and Theses.</p>
+        </div>
+    </div>
+
+    <main class="page-section">
+        <div class="container">
+
+
+            <p class="proj-intro">Publications, software, and theses.</p>
+            <div class="jump-links">
+                <a href="#publications">Publications</a>
+                <a href="#software">Software and Data</a>
+                <a href="#theses">Theses</a>
+                <a href="#posters">Posters and Talks</a>
+            </div>
+
+            <h2 class="section-title" id="publications">I. Publications</h2>
+
+            <article class="edu-card" id="swin-unetr">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3 class="edu-title">A Self-Supervised Framework for Glioma Segmentation Using Swin UNETR</h3>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>April 2026</span><span><i class="fas fa-book"></i>pp. 349-359</span><span><i class="fas fa-barcode"></i>ISBN 978-3-032-16364-6</span></div>
+                <div class="proj-authors">Lesly Tsoptio Fougang et al.</div>
+                <div><span class="pill pill-status"><i class="fas fa-check-circle"></i>Published</span></div>
+                <p class="edu-desc">A self-supervised framework for segmenting gliomas (brain tumors) with a Swin UNETR model.</p>
+                <div class="mb-2"><span class="tag">Medical imaging</span><span class="tag">Deep learning</span><span class="tag">Segmentation</span></div>
+                <div class="proj-links"><a class="btn btn-primary btn-sm" href="https://doi.org/10.1007/978-3-032-16365-3_32" target="_blank" rel="noopener"><i class="fas fa-link"></i> Paper (DOI)</a></div>
+            </article>
+
+            <h2 class="section-title" id="software">II. Software and Data</h2>
+
+            <article class="edu-card" id="lage-pipeline">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="edu-title">Metadata Extraction and FAIR Packaging Pipeline</h3>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>January - June 2026</span><span><i class="fas fa-building"></i>LAGE, Area Science Park</span></div>
+                <div><span class="pill pill-fund"><i class="fas fa-balance-scale"></i>MIT license</span></div>
+                <p class="edu-desc">A modular Python pipeline. It extracts and packages sequencing metadata from instrument-native files into standardised JSON and FAIR RO-Crate research objects.</p>
+                <ul>
+                    <li>A two-pass scan identifies data types and links raw files to laboratory instruments and activities.</li>
+                    <li>A registry-pattern design detects file types from their internal content, not their filenames.</li>
+                    <li>A common top-level JSON schema with five common fields, aligned with the DECOS institutional Common Data Model.</li>
+                    <li>A sample history module traces provenance across files, sequencing targets and platforms.</li>
+                    <li>RO-Crate 1.2 packaging in JSON-LD, validated with the RO-Crate Playground.</li>
+                </ul>
+                <div class="mb-2"><span class="tag">Python</span><span class="tag">RO-Crate</span><span class="tag">Schema.org</span><span class="tag">FAIR</span><span class="tag">Genomics</span></div>
+                <div class="proj-links"><a class="btn btn-dark btn-sm" href="https://github.com/RitAreaSciencePark/LAGE_Metadata_Extraction" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></div>
+            </article>
+
+            <article class="edu-card" id="embedding-api">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="edu-title">Document Text Extraction and Embedding API</h3>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>November 2025 - March 2026</span><span><i class="fas fa-building"></i>Area Science Park</span></div>
+                <div><span class="pill pill-status"><i class="fas fa-user"></i>Personal project</span></div>
+                <p class="edu-desc">A FastAPI service that extracts and vectorizes text from JSON, plain text and PDF files, for search and semantic similarity.</p>
+                <ul>
+                    <li>Header-based PDF chunking, with transformer embeddings (E5-base), batch processing and mean pooling.</li>
+                    <li>Payload size limit (15 MB), request logging and rotating log files.</li>
+                    <li>Automated deployment to a Linux virtual machine with GitHub Actions and systemd.</li>
+                </ul>
+                <div class="mb-2"><span class="tag">FastAPI</span><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">LangChain</span><span class="tag">Docker</span><span class="tag">Linux</span></div>
+                <div class="proj-links"><a class="btn btn-dark btn-sm" href="https://github.com/Lesly4/Embedding_vector_API" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></div>
+
+            </article>
+
+            <h2 class="section-title" id="theses">III. Theses</h2>
+
+            <article class="edu-card" id="mdmc-thesis">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-book"></i></div>
+                    <h3 class="edu-title">Automated Metadata Extraction and FAIR Packaging of Sequencing Data</h3>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>2026</span><span><i class="fas fa-university"></i>SISSA and Area Science Park (MDMC)</span></div>
+                <p class="edu-desc">Internship project and thesis of the Master in Data Management and Curation. The work is described in the <a href="#lage-pipeline">pipeline project</a> above.</p>
+                <div class="proj-links"><a class="btn btn-primary btn-sm" href="https://zenodo.org/records/21032803" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Thesis (Zenodo)</a><a class="btn btn-dark btn-sm" href="https://github.com/RitAreaSciencePark/LAGE_Metadata_Extraction" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></div>
+            </article>
+
+            <article class="edu-card" id="medphys-thesis">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-book"></i></div>
+                    <h3 class="edu-title">Commissioning of a new Linac Versa HD for VMAT Treatments</h3>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>2024</span><span><i class="fas fa-university"></i>University of Trieste and ICTP</span></div>
+                <p class="edu-desc">This thesis was written for the Advanced Master in Medical Physics. It covers the commissioning of a new Versa HD linear accelerator (Linac) for Volumetric Modulated Arc Therapy (VMAT) treatments.</p>
+<div class="proj-links"><a class="btn btn-primary btn-sm" href="https://zenodo.org/records/23458499" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Thesis (Zenodo)</a></div>            </article>
+
+            <article class="edu-card" id="biophysics-thesis">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-book"></i></div>
+                    <h3 class="edu-title">Simulating Excited States of Molecule with Variational Quantum Algorithm</h3>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>2021</span><span><i class="fas fa-university"></i>University of Yaounde I</span></div>
+                <p class="edu-desc">This thesis was written for the Master in Biophysics. It focuses on simulating the excited states of the H<sub>2</sub> molecule using hybrid quantum-classical algorithms (VQD and QEOM).</p>         
+               <div class="proj-links"><a class="btn btn-primary btn-sm" href="https://zenodo.org/records/24246072" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Thesis (Zenodo)</a></div>            </article>
+            </article>
+
+             <h2 class="section-title" id="posters">IV. Posters and Talks</h2>
+
+            <article class="edu-card">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 class="edu-title">Poster: Automated Metadata Extraction and FAIR Packaging of Sequencing Data</h3>
+                    <div><span class="pill pill-status"><i class="fas fa-chalkboard-teacher"></i>Poster</span></div>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>2026</span><span><i class="fas fa-map-marker-alt"></i>Thesis Defense, Trieste</span></div>
+                <p class="edu-desc">Poster summarising my MDMC thesis: automated extraction and FAIR packaging of sequencing metadata.</p>
+                <div class="proj-links"><a class="btn btn-primary btn-sm" href="https://zenodo.org/records/21036091" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Thesis (Zenodo)</a></div>            </article>
+            </article>
+            
+            <article class="edu-card">
+                <div class="edu-head">
+                    <div class="edu-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 class="edu-title">Slides: Automated Metadata Extraction and FAIR Packaging of Sequencing Data</h3>
+                    <div><span class="pill pill-status"><i class="fas fa-chalkboard-teacher"></i>Slides</span></div>
+                </div>
+                <div class="edu-meta"><span><i class="fas fa-calendar-alt"></i>2026</span><span><i class="fas fa-map-marker-alt"></i>Thesis Defense, Trieste</span></div>
+                <p class="edu-desc">Slides from my MDMC thesis defense, presenting the pipeline, its design and its results.</p>
+                <div class="proj-links"><a class="btn btn-primary btn-sm" href="https://zenodo.org/records/21036979" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Thesis (Zenodo)</a></div>            </article>
+            </article>
+    </main>
+
+    <footer class="footer bg-dark text-white py-3 mt-5">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <p class="mb-0 text-light small">&copy; 2026 Lesly Tsoptio Fougang. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://orcid.org/0009-0002-9585-3454" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID" class="text-light me-3 fs-5"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+                <a href="https://github.com/lesly4" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub" class="text-light me-3 fs-5"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/lesly-tsoptio-fougang-b48851204" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn" class="text-light me-3 fs-5"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="contact.html" title="Email" aria-label="Email" class="text-light fs-5"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>
