@@ -1,30 +1,41 @@
-# Portfolio (local version)
+# Portfolio of Lesly Tsoptio Fougang
 
-Plain HTML with Bootstrap. No build step.
+Hello, I am so happy to see you (*-*).
 
-## View it
+To see my personal portfolio website visit the site: https://lesly4.github.io
 
-From this folder, run:
+## Pages
 
-    python3 -m http.server 8000
+Home, Education, Research Interests, Projects, Contact.
 
-Open http://127.0.0.1:8000 in your browser.
+## Built with
 
-## Edit it
+- Bootstrap 5.3.3 (MIT)
+- Font Awesome Free 6.5.2 (icons CC BY 4.0, fonts SIL OFL 1.1, code MIT)
 
-- Pages: `index.html` and the files in `pages/`.
-- Colors: the `:root` block at the top of `assets/css/style.css`.
-- Photo: replace `static/profile.svg` and update the name in `index.html`.
-- CV: put your PDF in `static/` as `CV_Lesly_Tsoptio_Fougang.pdf`.
+Both are stored in `assets/vendor/`.
 
-## Placeholders to replace
+## Run locally
 
-Search for these words in all files:
+1. Make a copy of the repository:
+   ```bash
+   git clone https://github.com/lesly4/lesly4.github.io.git
+   cd lesly4.github.io
+   ```
+2. Open `index.html` in your browser, or start a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Then visit http://localhost:8000.
 
-- YOUR-USERNAME (GitHub)
-- YOUR-LINKEDIN
-- YOUR-ORCID
-- yourname [at] yourdomain [dot] com
-- YEAR (education and thesis dates)
+## Structure
 
-Bootstrap and the icons are saved in `assets/`, so the site works offline.
+- `index.html`: home page
+- `pages/`: other pages
+- `assets/css/style.css`: styles and color palette
+- `assets/vendor/`: third-party libraries
+- `static/`: images and files
+
+## License
+
+Code: MIT. Written content: CC BY 4.0. The photo is not covered by these licenses.
